@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hero Section</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- CSS File -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+  <nav class="navbar">
+    <div class="logo">
+      Benbess Star 
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#index">Home</a></li>
+      <li><a href="#about-details">About Us</a></li>
+      <li><a href="#admission">Admissions</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  </header>
+
+  <section id="index" class="hero-section relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-indigo-50 via-white to-purple-50">
+
+    <!-- Floating Background Shapes -->
+    <div class="floating-shape shape-1 absolute top-20 left-10 w-72 h-72 bg-indigo-300/20 rounded-full blur-3xl"></div>
+
+    <div class="floating-shape shape-2 absolute bottom-20 right-10 w-96 h-96 bg-purple-300/20 rounded-full blur-3xl"></div>
+
+    <div class="container mx-auto px-6 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+        <!-- Left Content -->
+        <div class="content-section">
+
+          <div class="welcome-badge inline-block px-4 py-2 bg-indigo-100 text-indigo-700 rounded-full mb-6">
+            Welcome to Benbess Star Academy
+          </div>
+
+          <h1 class="text-6xl font-bold mb-6 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+            Shaping Tomorrow's Leaders
+          </h1>
+
+          <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+            Discover a world-class education experience where innovation meets tradition.
+            Join thousands of students achieving their dreams.
+          </p>
+
+          <!-- Buttons -->
+          <div class="flex flex-wrap gap-4">
+
+            <a href="#admission" class="apply-btn px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-xl font-semibold shadow-lg shadow-indigo-500/50">
+              Apply Now
+            </a>
+
+            <a href="#gallery" class="tour-btn px-8 py-4 bg-white text-indigo-600 rounded-xl font-semibold border-2 border-indigo-600">
+              Virtual Tour
+            </a>
+
+          </div>
+
+          <!-- Stats -->
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+
+            <div class="text-center stat-item">
+              <i data-lucide="users" class="w-8 h-8 mx-auto mb-2 text-indigo-600"></i>
+              <div class="text-2xl font-bold text-gray-800">100+</div>
+              <div class="text-sm text-gray-600">Students</div>
+            </div>
+
+            <div class="text-center stat-item">
+              <i data-lucide="graduation-cap" class="w-8 h-8 mx-auto mb-2 text-indigo-600"></i>
+              <div class="text-2xl font-bold text-gray-800">98%</div>
+              <div class="text-sm text-gray-600">Success Rate</div>
+            </div>
+
+            <div class="text-center stat-item">
+              <i data-lucide="book-open" class="w-8 h-8 mx-auto mb-2 text-indigo-600"></i>
+              <div class="text-2xl font-bold text-gray-800">10+</div>
+              <div class="text-sm text-gray-600">Courses</div>
+            </div>
+
+            <div class="text-center stat-item">
+              <i data-lucide="award" class="w-8 h-8 mx-auto mb-2 text-indigo-600"></i>
+              <div class="text-2xl font-bold text-gray-800">5+</div>
+              <div class="text-sm text-gray-600">Awards</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right Images -->
+        <div class="image-section relative h-[600px] hidden lg:block">
+
+          <div class="floating-card card-1 absolute top-0 right-0 w-80 h-64 rounded-2xl overflow-hidden shadow-2xl">
+            <img
+              src="gallery1.jpg.png"
+              alt="Students learning"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <div class="floating-card card-2 absolute top-40 left-0 w-64 h-72 rounded-2xl overflow-hidden shadow-2xl">
+            <img
+              src="gallery2.jpg.png"
+              alt="Playground"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+          <div class="floating-card card-3 absolute bottom-0 right-20 w-56 h-56 rounded-2xl overflow-hidden shadow-2xl">
+            <img
+              src="uniform1.jpg.png"
+              alt="Uniform"
+              class="w-full h-full object-cover"
+            />
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+<section id="features" class="features-section py-20 px-6 bg-white">
+  <div class="container mx-auto">
+
+    <!-- Heading -->
+    <div class="heading-section text-center mb-16">
+      <h2 class="text-5xl font-bold mb-4 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+        Why Choose Us
+      </h2>
+
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+        Discover what makes our institution stand out from the rest
+      </p>
+    </div>
+
+    <!-- Features Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Feature 1 -->
+      <div class="feature-card group relative p-8 bg-white rounded-2xl border border-gray-200 overflow-hidden cursor-pointer">
+
+        <div class="hover-bg absolute inset-0 bg-gradient-to-br from-blue-500 to-cyan-500"></div>
+
+        <div class="feature-icon bg-gradient-to-br from-blue-500 to-cyan-500">
+          <i data-lucide="book-open" class="w-8 h-8 text-white"></i>
+        </div>
+
+        <h3 class="text-2xl font-bold mb-3 text-gray-800 feature-title">
+          Academic Excellence
+        </h3>
+
+        <p class="text-gray-600 leading-relaxed">
+          Rigorous curriculum designed to challenge and inspire young minds
+        </p>
+
+        <a class="learn-more" href="#about-academic">Learn More →</a>
+
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="feature-card group relative p-8 bg-white rounded-2xl border border-gray-200 overflow-hidden cursor-pointer">
+
+        <div class="hover-bg absolute inset-0 bg-gradient-to-br from-purple-500 to-pink-500"></div>
+
+        <div class="feature-icon bg-gradient-to-br from-purple-500 to-pink-500">
+          <i data-lucide="globe" class="w-8 h-8 text-white"></i>
+        </div>
+
+        <h3 class="text-2xl font-bold mb-3 text-gray-800 feature-title">
+          Global Perspective
+        </h3>
+
+        <p class="text-gray-600 leading-relaxed">
+          International programs and cultural exchange opportunities
+        </p>
+
+        <a class="learn-more" href="#about-global">Learn More →</a>
+
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="feature-card group relative p-8 bg-white rounded-2xl border border-gray-200 overflow-hidden cursor-pointer">
+
+        <div class="hover-bg absolute inset-0 bg-gradient-to-br from-orange-500 to-red-500"></div>
+
+        <div class="feature-icon bg-gradient-to-br from-orange-500 to-red-500">
+          <i data-lucide="palette" class="w-8 h-8 text-white"></i>
+        </div>
+
+        <h3 class="text-2xl font-bold mb-3 text-gray-800 feature-title">
+          Creative Arts
+        </h3>
+
+        <p class="text-gray-600 leading-relaxed">
+          State-of-the-art facilities for music, drama, and visual arts
+        </p>
+
+        <a class="learn-more" href="#about-creative">Learn More →</a>
+
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="feature-card group relative p-8 bg-white rounded-2xl border border-gray-200 overflow-hidden cursor-pointer">
+
+        <div class="hover-bg absolute inset-0 bg-gradient-to-br from-green-500 to-emerald-500"></div>
+
+        <div class="feature-icon bg-gradient-to-br from-green-500 to-emerald-500">
+          <i data-lucide="microscope" class="w-8 h-8 text-white"></i>
+        </div>
+
+        <h3 class="text-2xl font-bold mb-3 text-gray-800 feature-title">
+          STEM Innovation
+        </h3>
+
+        <p class="text-gray-600 leading-relaxed">
+          Modern labs and technology-driven learning experiences
+        </p>
+
+        <a class="learn-more" href="#about-stem">Learn More →</a>
+
+      </div>
+
+      <!-- Feature 5 -->
+      <div class="feature-card group relative p-8 bg-white rounded-2xl border border-gray-200 overflow-hidden cursor-pointer">
+
+        <div class="hover-bg absolute inset-0 bg-gradient-to-br from-indigo-500 to-blue-500"></div>
+
+        <div class="feature-icon bg-gradient-to-br from-indigo-500 to-blue-500">
+          <i data-lucide="music" class="w-8 h-8 text-white"></i>
+        </div>
+
+        <h3 class="text-2xl font-bold mb-3 text-gray-800 feature-title">
+          Performing Arts
+        </h3>
+
+        <p class="text-gray-600 leading-relaxed">
+          Professional-grade theaters and music studios
+        </p>
+
+        <a class="learn-more" href="#about-performing">Learn More →</a>
+
+      </div>
+
+      <!-- Feature 6 -->
+      <div class="feature-card group relative p-8 bg-white rounded-2xl border border-gray-200 overflow-hidden cursor-pointer">
+
+        <div class="hover-bg absolute inset-0 bg-gradient-to-br from-yellow-500 to-orange-500"></div>
+
+        <div class="feature-icon bg-gradient-to-br from-yellow-500 to-orange-500">
+          <i data-lucide="trophy" class="w-8 h-8 text-white"></i>
+        </div>
+
+        <h3 class="text-2xl font-bold mb-3 text-gray-800 feature-title">
+          Sports & Athletics
+        </h3>
+
+        <p class="text-gray-600 leading-relaxed">
+          Championship teams and Olympic-standard facilities
+        </p>
+
+        <a class="learn-more" href="#about-sports">Learn More →</a>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Admissions Section -->
+<section id="admission" class="admission-section py-20 px-6 bg-white">
+  <div class="container mx-auto max-w-3xl">
+    <div class="text-center mb-8">
+      <h2 class="text-4xl font-bold mb-2">Admissions Form</h2>
+      <p class="text-gray-600">Please complete the form below to apply. Required fields are marked *</p>
+    </div>
+
+    <form class="admission-form grid grid-cols-1 gap-4">
+      <label>Child's Full Name *</label>
+      <input type="text" name="child_name" required />
+
+      <label>Date of Birth *</label>
+      <input type="date" name="dob" required />
+
+      <label>Passport Photo of Child (upload) *</label>
+      <input type="file" name="passport_photo" accept="image/*" required />
+
+      <label>Medical Information / Allergies</label>
+      <textarea name="medical_info" rows="4" placeholder="List any allergies, medications, or medical notes"></textarea>
+
+      <label>Parent / Guardian Name *</label>
+      <input type="text" name="parent_name" required />
+
+      <label>Emergency Phone *</label>
+      <input type="tel" name="emergency_phone" required />
+
+      <label>Email *</label>
+      <input type="email" name="parent_email" required />
+
+      <button type="submit" class="submit-btn">Submit Application</button>
+    </form>
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery" class="gallery-section py-20 px-6 bg-white">
+  <div class="container mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold mb-4">Virtual Gallery</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">Browse grouped photo albums from school events and daily life.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="album-card">
+        <img src="career-day.jpg" alt="Career day" />
+        <h3>Career Day Photos</h3>
+        <p>Students exploring future careers with role-play and guest speakers.</p>
+      </div>
+
+      <div class="album-card">
+        <img src="playground.jpg" alt="Playground" />
+        <h3>Playground Photos</h3>
+        <p>Active playtime and outdoor learning in our safe playgrounds.</p>
+      </div>
+
+      <div class="album-card">
+        <img src="graduation.jpg" alt="Graduation day" />
+        <h3>Graduation Day</h3>
+        <p>Celebrating student achievements and memorable commencement moments.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About details anchors -->
+<section id="about-details" class="about-details py-16 px-6 bg-indigo-50">
+  <div class="container mx-auto max-w-4xl">
+    <article id="about-academic" class="mb-8">
+      <h3 class="text-2xl font-bold">Academic Excellence</h3>
+      <p class="text-gray-700">Full details about curriculum, assessment, and programs.</p>
+    </article>
+    <article id="about-global" class="mb-8">
+      <h3 class="text-2xl font-bold">Global Perspective</h3>
+      <p class="text-gray-700">International partnerships and exchange information.</p>
+    </article>
+    <article id="about-creative" class="mb-8">
+      <h3 class="text-2xl font-bold">Creative Arts</h3>
+      <p class="text-gray-700">Information on arts programs and facilities.</p>
+    </article>
+    <article id="about-stem" class="mb-8">
+      <h3 class="text-2xl font-bold">STEM Innovation</h3>
+      <p class="text-gray-700">Labs, clubs, and competitions details.</p>
+    </article>
+    <article id="about-performing" class="mb-8">
+      <h3 class="text-2xl font-bold">Performing Arts</h3>
+      <p class="text-gray-700">Theater and music program descriptions.</p>
+    </article>
+    <article id="about-sports" class="mb-8">
+      <h3 class="text-2xl font-bold">Sports & Athletics</h3>
+      <p class="text-gray-700">Teams, coaching, and facilities details.</p>
+    </article>
+  </div>
+</section>
+
+<section id="testimonials" class="testimonials-section py-20 px-6 bg-white">
+  <div class="container mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl font-bold mb-4">Testimonials</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">Hear from parents, students, and staff about their experience at Benbess Star Academy.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6 mb-12">
+      <div class="testimonial-card p-6 rounded-3xl shadow-lg bg-gradient-to-br from-indigo-500 to-purple-500 text-white">
+        <p>“The teachers are dedicated and the campus is welcoming. Our child feels supported every day.”</p>
+        <span class="testimonial-author">— Amina K.</span>
+      </div>
+      <div class="testimonial-card p-6 rounded-3xl shadow-lg bg-gradient-to-br from-cyan-500 to-blue-500 text-white">
+        <p>“Amazing learning environment and strong career guidance. We love the school community.”</p>
+        <span class="testimonial-author">— David N.</span>
+      </div>
+      <div class="testimonial-card p-6 rounded-3xl shadow-lg bg-gradient-to-br from-emerald-500 to-teal-500 text-white">
+        <p>“From arts to STEM, my child has grown in confidence. The school truly cares about each student.”</p>
+        <span class="testimonial-author">— Sarah O.</span>
+      </div>
+    </div>
+
+    <div class="feedback-form max-w-3xl mx-auto bg-slate-50 rounded-3xl p-8 shadow-lg">
+      <h3 class="text-2xl font-bold mb-4">Send Us Your Feedback</h3>
+      <form id="feedbackForm" class="grid gap-4">
+        <textarea name="feedback" rows="4" required placeholder="Write your feedback here" class="feedback-input"></textarea>
+        <button type="submit" class="submit-btn">Send Feedback</button>
+        <div id="feedbackMessage" class="feedback-message"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section py-20 px-6 bg-indigo-50">
+  <div class="container mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-5xl font-bold mb-4 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+        Contact Us
+      </h2>
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+        Reach our admissions team by phone, email, or WhatsApp for fast support.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <a href="tel:+233246801963" class="contact-card phone-action">
+        <div class="contact-icon">
+          <i data-lucide="phone" class="w-8 h-8 text-white"></i>
+        </div>
+        <h3>Call Us</h3>
+        <p>+233 246801963</p>
+      </a>
+
+      <a href="sms:+233551133893" class="contact-card sms-action">
+        <div class="contact-icon">
+          <i data-lucide="message-circle" class="w-8 h-8 text-white"></i>
+        </div>
+        <h3>SMS Us</h3>
+        <p>Send a text message</p>
+      </a>
+
+      <a href="mailto:info@benbessstaracademy.com?subject=Admissions%20Inquiry" class="contact-card">
+        <div class="contact-icon">
+          <i data-lucide="mail" class="w-8 h-8 text-white"></i>
+        </div>
+        <h3>Email Us</h3>
+        <p>ebenopoku8019@gmail.com</p>
+      </a>
+
+      <a href="https://wa.me/+233551133893" target="_blank" rel="noreferrer" class="contact-card whatsapp-action">
+        <div class="contact-icon">
+          <i data-lucide="message-square" class="w-8 h-8 text-white"></i>
+        </div>
+        <h3>WhatsApp</h3>
+        <p>Chat on WhatsApp</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- JavaScript File -->
+<script src="script.js"></script>
+<script>
+  lucide.createIcons();
+</script>
+<footer class="site-footer">
+  <div class="container mx-auto">
+    <div>Follow us on social media</div>
+    <div class="social-links">
+      <a href="https://www.facebook.com/" target="_blank" rel="noreferrer"><i data-lucide="facebook"></i></a>
+      <a href="https://twitter.com/" target="_blank" rel="noreferrer"><i data-lucide="twitter"></i></a>
+      <a href="https://www.instagram.com/" target="_blank" rel="noreferrer"><i data-lucide="instagram"></i></a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><i data-lucide="linkedin"></i></a>
+      <a href="https://www.youtube.com/" target="_blank" rel="noreferrer"><i data-lucide="youtube"></i></a>
+      <a href="https://wa.me/+255551133893" target="_blank" rel="noreferrer"><i data-lucide="message-square"></i></a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
