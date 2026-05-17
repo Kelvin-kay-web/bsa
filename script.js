@@ -84,3 +84,77 @@ if (smsActions.length > 0) {
 if (whatsappActions.length > 0) {
   attachContactResponse(whatsappActions, 'We will send a reply within 24hrs. Thanks for your response.');
 }
+
+// Carousel functionality
+const carousels = {
+  'carousel-l': { currentIndex: 0, autoPlayInterval: null },
+  'carousel-pg': { currentIndex: 0, autoPlayInterval: null },
+  'carousel-cd': { currentIndex: 0, autoPlayInterval: null }
+};
+
+function getCarouselSlides(carouselId) {
+  const carousel = document.getElementById(carouselId);
+  return carousel ? carousel.querySelectorAll('.carousel-slide') : [];
+}
+
+function updateCarouselPosition(carouselId) {
+  const carousel = document.getElementById(carouselId);
+  const slides = getCarouselSlides(carouselId);
+  const state = carousels[carouselId];
+  
+  if (carousel && slides.length > 0) {
+    const offset = -state.currentIndex * 100;
+    carousel.style.transform = `translateX(${offset}%)`;
+  }
+}
+
+function changeSlide(carouselId, direction) {
+  const slides = getCarouselSlides(carouselId);
+  const state = carousels[carouselId];
+  
+  if (slides.length === 0) return;
+  
+  state.currentIndex += direction;
+  
+  if (state.currentIndex >= slides.length) {
+    state.currentIndex = 0;
+  } else if (state.currentIndex < 0) {
+    state.currentIndex = slides.length - 1;
+  }
+  
+  updateCarouselPosition(carouselId);
+  resetAutoPlay(carouselId);
+}
+
+function autoPlayCarousel(carouselId) {
+  const state = carousels[carouselId];
+  const slides = getCarouselSlides(carouselId);
+  
+  if (slides.length <= 1) return;
+  
+  state.autoPlayInterval = setInterval(() => {
+    changeSlide(carouselId, 1);
+  }, 5000);
+}
+
+function resetAutoPlay(carouselId) {
+  const state = carousels[carouselId];
+  if (state.autoPlayInterval) {
+    clearInterval(state.autoPlayInterval);
+  }
+  autoPlayCarousel(carouselId);
+}
+
+function initializeCarousels() {
+  Object.keys(carousels).forEach(carouselId => {
+    const slides = getCarouselSlides(carouselId);
+    if (slides.length > 0) {
+      updateCarouselPosition(carouselId);
+      autoPlayCarousel(carouselId);
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', initializeCarousels);
+
+window.changeSlide = changeSlide;

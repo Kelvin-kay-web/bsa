@@ -330,23 +330,52 @@
       <p class="text-gray-600 max-w-2xl mx-auto">Browse grouped photo albums from school events and daily life.</p>
     </div>
 
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="album-card">
-        <img src="career-day.jpg" alt="Career day" />
-        <h3>Career Day Photos</h3>
-        <p>Students exploring future careers with role-play and guest speakers.</p>
+    <!-- Career Day Carousel -->
+    <div class="gallery-album mb-16">
+      <h3 class="text-2xl font-bold mb-6">Career Day Photos</h3>
+      <p class="text-gray-600 mb-6">Students exploring future careers with role-play and guest speakers.</p>
+      <div class="carousel-container">
+        <div class="carousel" id="carousel-cd">
+          <img src="cd1.png.jpg" alt="Career day 1" class="carousel-slide" />
+          <img src="cd2.png.jpg" alt="Career day 2" class="carousel-slide" />
+          <img src="cd3.jpg.jpg" alt="Career day 3" class="carousel-slide" />
+          <img src="cd7.jpg.jpg" alt="Career day 7" class="carousel-slide" />
+          <img src="cd9.jpg.jpg" alt="Career day 9" class="carousel-slide" />
+          <img src="cd10.jpg.jpg" alt="Career day 10" class="carousel-slide" />
+        </div>
+        <button class="carousel-btn prev" onclick="changeSlide('carousel-cd', -1)">❮</button>
+        <button class="carousel-btn next" onclick="changeSlide('carousel-cd', 1)">❯</button>
       </div>
+    </div>
 
-      <div class="album-card">
-        <img src="playground.jpg" alt="Playground" />
-        <h3>Playground Photos</h3>
-        <p>Active playtime and outdoor learning in our safe playgrounds.</p>
+    <!-- Playground Carousel -->
+    <div class="gallery-album mb-16">
+      <h3 class="text-2xl font-bold mb-6">Playground Photos</h3>
+      <p class="text-gray-600 mb-6">Active playtime and outdoor learning in our safe playgrounds.</p>
+      <div class="carousel-container">
+        <div class="carousel" id="carousel-pg">
+          <img src="pg1.png.png" alt="Playground 1" class="carousel-slide" />
+          <img src="pg2.png.png" alt="Playground 2" class="carousel-slide" />
+          <img src="pg3.png.png" alt="Playground 3" class="carousel-slide" />
+        </div>
+        <button class="carousel-btn prev" onclick="changeSlide('carousel-pg', -1)">❮</button>
+        <button class="carousel-btn next" onclick="changeSlide('carousel-pg', 1)">❯</button>
       </div>
+    </div>
 
-      <div class="album-card">
-        <img src="graduation.jpg" alt="Graduation day" />
-        <h3>Graduation Day</h3>
-        <p>Celebrating student achievements and memorable commencement moments.</p>
+    <!-- Learning Carousel -->
+    <div class="gallery-album mb-16">
+      <h3 class="text-2xl font-bold mb-6">Learning Images</h3>
+      <p class="text-gray-600 mb-6">Celebrating student achievements and memorable commencement moments.</p>
+      <div class="carousel-container">
+        <div class="carousel" id="carousel-l">
+          <img src="l1.png.png" alt="Learning 1" class="carousel-slide" />
+          <img src="l2.png.png" alt="Learning 2" class="carousel-slide" />
+          <img src="l3.png.png" alt="Learning 3" class="carousel-slide" />
+          <img src="l4.png.png" alt="Learning 4" class="carousel-slide" />
+        </div>
+        <button class="carousel-btn prev" onclick="changeSlide('carousel-l', -1)">❮</button>
+        <button class="carousel-btn next" onclick="changeSlide('carousel-l', 1)">❯</button>
       </div>
     </div>
   </div>
